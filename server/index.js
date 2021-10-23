@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 5000
 const config = require('./config/key');
 const {User} = require("./model/User");
 const bodyParser = require('body-parser');
@@ -95,7 +94,11 @@ app.get('/api/users/logout', auth, (req, res) => {
         })
 })
 
+app.get('/api/hello', (req, res) => {
+    
+    res.send("안녕하세요 적당히 바람이 시원해 너무 기분이 좋아요 ~ 유후")
+})
 
-
+const port = 5000
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
