@@ -12,8 +12,11 @@ function LadingPage() {
     }, [])
 
     return (
-        <div>
-            LadingPage 랜딩페이지 입니다
+        <div style={{
+            display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100vh'
+        
+        }}>
+            <h2>HOME</h2>
         </div>
     )
 }
